@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Fantasy Fishing RPG</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #080810;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            user-select: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        canvas {
+            width: min(100vw, 133.33vh);
+            height: min(100vh, 75vw);
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <script src="content/items.js"></script>
+    <script src="content/world.js"></script>
+    <script src="content/talents.js"></script>
+    <script src="content/gear.js"></script>
+    <script src="content/quests_swamp.js"></script>
+    <script src="content/quests_pond.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/screens.js"></script>
+    <script src="js/pond.js"></script>
+    <script src="js/fishing.js"></script>
+    <script src="js/draw.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
